@@ -1,0 +1,51 @@
+.TaskList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ListHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ListHeader div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ListHeader div + div {
+  color: var(--purple);
+}
+
+.ListHeader div span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  padding: 2px 8px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ListContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 4rem 1.5rem;
+}
