@@ -1,0 +1,72 @@
+.Task {
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.225rem;
+}
+
+.CheckBox {
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  margin-top: 2px;
+
+  width: 17px;
+  height: 17px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+  flex-grow: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.CheckBox input[type='checkbox'] {
+  display: none;
+  user-select: none;
+}
+
+.CheckBox:has(input[type='checkbox']:checked) {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
+
+.Task > div {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 90%;
+}
+
+.CheckedText {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.DeleteIcon {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.DeleteIcon:hover {
+  background-color: var(--gray-400);
+}
+
+.DeleteIcon:hover svg path {
+  fill: var(--danger);
+}
